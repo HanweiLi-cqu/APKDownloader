@@ -1,0 +1,8 @@
+config.py
+apk
+.venv
+__pycache__
+log/*.log
+temp
+app_list/*.txt
+*/__pycache__
