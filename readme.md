@@ -18,4 +18,7 @@ python -b 0 -f 100 # app_list[0:100] will use to crawl apps from apkpure
 
 python -m -b 0 -f 100 # will download again to get missed apps
 ```
-Because there are two stages: normal and miss.
+## Note
+Because there are two stages: normal and miss. Normal is download apps. The miss phase is to go and download the apps that didn't work in the NORMAL phase, they may be due to timeouts etc.
+
+So the purpose of the apk folder is not to save the apk, but to staging the apk. your correct process should be <p style="color:red">normal->miss->transfer apk file to really staging it!</p>
