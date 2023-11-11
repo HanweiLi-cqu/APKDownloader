@@ -23,4 +23,6 @@ Because there are two stages: normal and miss. Normal is download apps. The miss
 
 So the purpose of the apk folder is not to save the apk, but to staging the apk. your correct process should be <p style="color:red">normal->miss->transfer apk file to really staging it!</p>
 
+However, if you could get enough apps such as 90+/100(download apps/offset), miss stage could be skiped.
+
 <p style="color:red">Don't forget after running a round, change the proxy. Offset is 100 is the appropriate number</p>
