@@ -1,7 +1,5 @@
-from androguard.misc import AnalyzeAPK
 from androguard.core.bytecodes import apk
 from androguard.core.androconf import show_logging
-import os
 show_logging(level="ERROR")
     
 class AndroguardParse:

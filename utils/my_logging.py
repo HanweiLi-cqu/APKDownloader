@@ -1,8 +1,6 @@
 import logging.config
 import logging
 
-# generate a class for file logging
-
 class FileLogger:
     def __init__(self,log_file:str,log_name:str,log_level:str="DEBUG") -> None:
         self.log_file = log_file
@@ -41,19 +39,3 @@ class FileLogger:
 if __name__=="__main__":
     logger = FileLogger(log_file="../log/download.log",log_name="test",log_level="INFO")
     logger.info("xss")
-    # # Create a custom logger
-    # logger = logging.getLogger("test")
-
-    # # Create handlers
-    # f_handler = logging.FileHandler('file.log')
-    # f_handler.setLevel(logging.ERROR)
-
-    # # Create formatters and add it to handlers
-    # f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    # f_handler.setFormatter(f_format)
-
-    # # Add handlers to the logger
-    # logger.addHandler(f_handler)
-
-    # logger.warning('This is a warning')
-    # logger.error('This is an error')
