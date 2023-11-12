@@ -57,11 +57,18 @@ def check_apk_count(store_path:str,clean_others:bool=True):
     :param clean_others: clean other files\\
     """
     files = get_file_list(source_dir=store_path)
+    count = 0
     if clean_others:
         for file in files:
             if not file.endswith(".apk"):
                 os.remove(file)
-    return len(files)
+            else:
+                count+=1
+    else:
+        for file in files:
+            if file.endswith(".apk"):
+                count+=1
+    return count
 
 def insert_into_redis(app_list:List):
     """
